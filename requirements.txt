@@ -2,6 +2,7 @@
 pip>=9
 # utilities
 aiortc==1.2.1
+typing-extensions==3.7.4.3
 opencv-python-headless
 opencv-contrib-python-headless
 cvzone
@@ -12,4 +13,3 @@ streamlit-webrtc==0.31.3
 streamlit==1.2.0
 tensorflow==2.5.2
 hydralit_components
-bokeh==2.4.1
