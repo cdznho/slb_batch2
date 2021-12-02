@@ -8,7 +8,7 @@ import numpy as np
 #import queue #decomment all queues to have it on the website
 from PIL import Image
 import hydralit_components as hc
-from bokeh.models.widgets import Div
+#from bokeh.models.widgets import Div
 from model_utils import build_model
 
 # Import component
@@ -62,25 +62,25 @@ if menu_id == "Le Wagon":
     <br>
     """
     col1.write(info2, unsafe_allow_html=True)
-    
-    m = col1.markdown("""
-    <style>
-    div.stButton > button:first-child {
-        background-color: #e63946;
-        color:#ffffff;
-    }
-    div.stButton > button:hover {
-        background-color: #f77f00;
-        color:#ffffff;
-        }
-    </style>""", unsafe_allow_html=True)
-    
-    link = '[Le Wagon](https://www.lewagon.com/fr)'
-    if col1.button(label="Go to LeWagon Website!"):
-            js = "window.open('https://www.lewagon.com/fr')"  # New tab or window
-            html = '<img src onerror="{}">'.format(js)
-            div = Div(text=html)
-            st.bokeh_chart(div)
+
+    # m = col1.markdown("""
+    # <style>
+    # div.stButton > button:first-child {
+    #     background-color: #e63946;
+    #     color:#ffffff;
+    # }
+    # div.stButton > button:hover {
+    #     background-color: #f77f00;
+    #     color:#ffffff;
+    #     }
+    # </style>""", unsafe_allow_html=True)
+
+    # link = '[Le Wagon](https://www.lewagon.com/fr)'
+    # if col1.button(label="Go to LeWagon Website!"):
+    #         js = "window.open('https://www.lewagon.com/fr')"  # New tab or window
+    #         html = '<img src onerror="{}">'.format(js)
+    #         div = Div(text=html)
+    #         st.bokeh_chart(div)
 
 
 ##########################################
@@ -98,10 +98,10 @@ if menu_id == "Teammates":
     img_follow = Image.open("./images/follow_us.JPG")
     col2.image(img_follow)
     col1.markdown( "[![this is an image link](https://img.icons8.com/nolan/2x/github.png)](https://github.com/glauret)")
-    col1.markdown("<p style='text-align: center;'><b>Guillaume Lauret</p>", unsafe_allow_html=True)   
+    col1.markdown("<p style='text-align: center;'><b>Guillaume Lauret</p>", unsafe_allow_html=True)
     col3.markdown( "[![this is an image link](https://img.icons8.com/nolan/2x/github.png)](https://github.com/selmalopez)")
     col3.markdown("<p style='text-align: center;'><b>Selma Lopez</p>", unsafe_allow_html=True)
-      
+
 ##########################################
 ####### navbar menu Sign Learning ########
 ##########################################
@@ -133,7 +133,7 @@ if menu_id == "Home":
     [![Star](https://img.shields.io/github/stars/jvesp/sld.svg?logo=github&style=social)](https://github.com/jvesp/sld)
     """
     info_element.write(info, unsafe_allow_html=True)
-    
+
 ##########################################
 ########## navbar menu Webcam ############
 ##########################################
@@ -168,8 +168,7 @@ if menu_id == "Webcam":
     #     print("model loaded")
     #     txt.success("Téléchargement terminé")
 
-    #@st.cache(allow_output_mutation=True)
-    @st.experimental_singleton
+    @st.cache(allow_output_mutation=True)
     def load_mo():
         #model = load_model('models/model_resnet50_V2_8830.h5')
         model = build_model()
