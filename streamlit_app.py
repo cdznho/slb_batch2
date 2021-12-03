@@ -119,20 +119,16 @@ if menu_id == "Home":
 
     img = Image.open("./images/hands.JPG")
     st.image(img)
-    # initialise the elements
-    info_element = st.empty()
+    col1, col2 = st.columns(([14,1]))
     #info
     info = '''
-    <p>A real-time sign language translator permit communication between the deaf
-    community and the general public. 🤙</p>
-    <p>We hereby present the development and implementation of an American Sign
-    Language fingerspelling translator based on a
-    convolutional neural network. 🚀</p>
     <p>Made with 💙 by <a href='https://github.com/jvesp/sld'>Detection language team</a></p>'''.strip()
-    """
+    
+    info2="""
     [![Star](https://img.shields.io/github/stars/jvesp/sld.svg?logo=github&style=social)](https://github.com/jvesp/sld)
     """
-    info_element.write(info, unsafe_allow_html=True)
+    col1.write(info, unsafe_allow_html=True)
+    col2.write(info2, unsafe_allow_html=True)
 
 ##########################################
 ########## navbar menu Webcam ############
@@ -265,7 +261,7 @@ if menu_id == "Webcam":
                     # cv2.rectangle(image_hand, (195, 55), (250, 80), (42, 219, 151), cv2.FILLED)
                     font = cv2.FONT_HERSHEY_DUPLEX
                     cv2.putText(image_hand, final_word, (200, 60), font, 1.5,
-                                (255, 255, 255), 4)
+                                (20, 1, 170), 4)
 
             else:
                 if self.word:
