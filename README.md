@@ -3,5 +3,6 @@
 - Description: Sign Language Translator using computer vision
 - Dataset : homemade 7500 pictures of hands position
 - Type of neural network: Convolutional Neural Network with transfer learning from Resnet50 V2
-Available on a streamlit app : https://share.streamlit.io/jvesp/sld
+
+Try it out now on the streamlit app : https://share.streamlit.io/dannxs/sld
 
