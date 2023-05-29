@@ -11,7 +11,7 @@ numpy
 streamlit-webrtc
 streamlit
 tensorflow
-# hydralit_components
+hydralit_components
 pillow
 # click==7.1.2
 mediapipe
