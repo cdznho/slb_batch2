@@ -1,4 +1,4 @@
-import cv2
+# import cv2
 from handdetector import HandDetector
 import av
 import streamlit as st
