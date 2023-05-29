@@ -7,7 +7,7 @@ from tensorflow.keras.models import load_model
 import numpy as np
 #import queue #decomment all queues to have it on the website
 from PIL import Image
-#import hydralit_components as hc
+import hydralit_components as hc
 #from bokeh.models.widgets import Div
 from model_utils import build_model
 
