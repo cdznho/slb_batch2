@@ -1,15 +1,17 @@
 # packaging
 pip>=9
 # utilities
-aiortc==1.2.1
-typing-extensions==3.7.4.3
-#opencv-python-headless
-#opencv-contrib-python-headless
-#cvzone
-mediapipe
+# aiortc==1.2.1
+# typing-extensions==3.7.4.3
+# opencv-python-headless
+# opencv-contrib-python-headless
+# cvzone
 numpy
 #streamlit and tensorflow
-streamlit-webrtc==0.31.3
-streamlit==1.2.0
+streamlit-webrtc
+streamlit
 tensorflow
-hydralit_components
+# hydralit_components
+pillow
+# click==7.1.2
+mediapipe
