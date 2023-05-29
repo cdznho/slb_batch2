@@ -6,10 +6,10 @@ typing-extensions==3.7.4.3
 #opencv-python-headless
 #opencv-contrib-python-headless
 #cvzone
-mediapipe==0.8.9
+mediapipe
 numpy
 #streamlit and tensorflow
 streamlit-webrtc==0.31.3
 streamlit==1.2.0
-tensorflow==2.5.2
+tensorflow
 hydralit_components
